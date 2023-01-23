@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HACC MDS Joiner", "HACC MDS Joiner.csproj", "{981926D7-3641-4E1C-9307-78D373A3E535}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HACC MDS Joiner Installer", "HACC MDS Joiner Installer\HACC MDS Joiner Installer.vdproj", "{7B1C37DE-D419-4223-9F8B-0657A5FA3CFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{981926D7-3641-4E1C-9307-78D373A3E535}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{981926D7-3641-4E1C-9307-78D373A3E535}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{981926D7-3641-4E1C-9307-78D373A3E535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1C37DE-D419-4223-9F8B-0657A5FA3CFF}.Debug|Any CPU.ActiveCfg = Debug
+		{7B1C37DE-D419-4223-9F8B-0657A5FA3CFF}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -49,10 +49,9 @@
             // 
             // btnSrc
             // 
-            this.btnSrc.Location = new System.Drawing.Point(16, 68);
-            this.btnSrc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSrc.Location = new System.Drawing.Point(12, 55);
             this.btnSrc.Name = "btnSrc";
-            this.btnSrc.Size = new System.Drawing.Size(212, 28);
+            this.btnSrc.Size = new System.Drawing.Size(159, 23);
             this.btnSrc.TabIndex = 0;
             this.btnSrc.Text = "Open Primary File";
             this.btnSrc.UseVisualStyleBackColor = true;
@@ -60,10 +59,9 @@
             // 
             // btnSubsequent
             // 
-            this.btnSubsequent.Location = new System.Drawing.Point(16, 171);
-            this.btnSubsequent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSubsequent.Location = new System.Drawing.Point(12, 139);
             this.btnSubsequent.Name = "btnSubsequent";
-            this.btnSubsequent.Size = new System.Drawing.Size(212, 28);
+            this.btnSubsequent.Size = new System.Drawing.Size(159, 23);
             this.btnSubsequent.TabIndex = 1;
             this.btnSubsequent.Text = "Open Secondary File";
             this.btnSubsequent.UseVisualStyleBackColor = true;
@@ -71,10 +69,9 @@
             // 
             // btnDownload
             // 
-            this.btnDownload.Location = new System.Drawing.Point(16, 260);
-            this.btnDownload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDownload.Location = new System.Drawing.Point(12, 211);
             this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(212, 28);
+            this.btnDownload.Size = new System.Drawing.Size(159, 23);
             this.btnDownload.TabIndex = 2;
             this.btnDownload.Text = "Save Joined File";
             this.btnDownload.UseVisualStyleBackColor = true;
@@ -84,8 +81,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 3;
@@ -95,8 +91,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 119);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 4;
@@ -106,8 +101,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 224);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(12, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 5;
@@ -116,10 +110,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 32);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(12, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(274, 32);
+            this.label4.Size = new System.Drawing.Size(224, 26);
             this.label4.TabIndex = 6;
             this.label4.Text = "Open the primary file that contains the correct \r\nagency and identification data." +
     "";
@@ -127,10 +120,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 135);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(12, 110);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(299, 32);
+            this.label5.Size = new System.Drawing.Size(240, 26);
             this.label5.TabIndex = 7;
             this.label5.Text = "Open secondary files that contain additional data.\r\nRepeat as manay times as ness" +
     "ecary.";
@@ -138,21 +130,19 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 240);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(12, 195);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 16);
+            this.label6.Size = new System.Drawing.Size(131, 13);
             this.label6.TabIndex = 8;
             this.label6.Text = "Download the resulting file";
             // 
             // rtbOutput
             // 
             this.rtbOutput.BackColor = System.Drawing.Color.White;
-            this.rtbOutput.Location = new System.Drawing.Point(384, 15);
-            this.rtbOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtbOutput.Location = new System.Drawing.Point(288, 12);
             this.rtbOutput.Name = "rtbOutput";
             this.rtbOutput.ReadOnly = true;
-            this.rtbOutput.Size = new System.Drawing.Size(477, 272);
+            this.rtbOutput.Size = new System.Drawing.Size(359, 222);
             this.rtbOutput.TabIndex = 9;
             this.rtbOutput.Text = "";
             this.rtbOutput.WordWrap = false;
@@ -160,10 +150,9 @@
             // lblReset
             // 
             this.lblReset.AutoSize = true;
-            this.lblReset.Location = new System.Drawing.Point(236, 74);
-            this.lblReset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReset.Location = new System.Drawing.Point(177, 60);
             this.lblReset.Name = "lblReset";
-            this.lblReset.Size = new System.Drawing.Size(43, 16);
+            this.lblReset.Size = new System.Drawing.Size(35, 13);
             this.lblReset.TabIndex = 10;
             this.lblReset.TabStop = true;
             this.lblReset.Text = "Reset";
@@ -176,9 +165,9 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(879, 303);
+            this.ClientSize = new System.Drawing.Size(659, 246);
             this.Controls.Add(this.lblReset);
             this.Controls.Add(this.rtbOutput);
             this.Controls.Add(this.label6);
@@ -191,9 +180,10 @@
             this.Controls.Add(this.btnSubsequent);
             this.Controls.Add(this.btnSrc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMain";
+            this.ShowIcon = false;
             this.Text = "HACC MDS Joiner";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

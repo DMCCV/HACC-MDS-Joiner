@@ -654,5 +654,10 @@ namespace HACC_MDS_Joiner
         {
             appendOutput(text + "\n");
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
