@@ -20,6 +20,13 @@ A windows application that merges two or more Victorian HACC MDS files.
 - The output window will display information, errors and warnings for each step.
 - The primary file name is retained when the output file is saved, however it can be altered in the save file dialog.
 
+## Download
+
+Version 1.0
+
+[HACC MDS Joiner - Installer.msi](https://github.com/DMCCV/HACC-MDS-Joiner/releases/download/v1.0/HACC.MDS.Joiner.-.Installer.msi)
+
+[HACC MDS Joiner - Portable.zip](https://github.com/DMCCV/HACC-MDS-Joiner/releases/download/v1.0/HACC.MDS.Joiner.-.Portable.zip)
 
 ## More Information
 
