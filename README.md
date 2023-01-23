@@ -2,7 +2,7 @@
 
 A windows application that merges two or more Victorian HACC MDS files.
 
- ![Screenshot](https://raw.githubusercontent.com/DMCCV/HACC-MDS-Joiner/master/Screenshot.png)
+ ![Screenshot](https://github.com/DMCCV/HACC-MDS-Joiner/blob/master/Resources/Screenshot.png)
 
 ## Instructions
 
