@@ -17,7 +17,7 @@ namespace HACC_MDS_Joiner
         List<string> FilesProcessed = new List<string>();
         List<string> HeaderRow = new List<string>(10);
         List<List<string>> ClientData = new List<List<string>>();
-        string originalFilename = "";
+        string OriginalFilename = "";
 
         const string VERSION_IDENTIFIER = "201";
 
@@ -36,7 +36,7 @@ namespace HACC_MDS_Joiner
             ClientData = new List<List<string>>();
             FilesProcessed = new List<string>();
             rtbOutput.Text = "";
-            originalFilename = "";
+            OriginalFilename = "";
         }
         private void startSubsequent()
         {
@@ -55,7 +55,7 @@ namespace HACC_MDS_Joiner
                 if (result == DialogResult.OK)
                 {
                     readCSVIntoArray(openCSVFileDialog.FileName, true);
-                    originalFilename = Path.GetFileName(openCSVFileDialog.FileName);
+                    OriginalFilename = Path.GetFileName(openCSVFileDialog.FileName);
                     startSubsequent();
                 }
             }
@@ -92,6 +92,8 @@ namespace HACC_MDS_Joiner
             var stream = File.OpenRead(filepath);
             var hash = md5.ComputeHash(stream);
             string md5string = BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+            stream.Close();
+
             if (FilesProcessed.Contains(md5string))
             {
                 throw new Exception("File already loaded");
@@ -161,8 +163,10 @@ namespace HACC_MDS_Joiner
                     added++;
                     ClientData.Add(newRow);
                 }                
-            } 
-            
+            }
+
+            csvParser.Close();
+
             appendOutputPlain("Found " + clientrow + " Client Rows");
             appendOutputPlain("Added " + added + " Client Rows");
             if (merged > 0)
@@ -577,7 +581,7 @@ namespace HACC_MDS_Joiner
         {
             try
             {
-                saveCSVFileDialog.FileName = originalFilename;
+                saveCSVFileDialog.FileName = OriginalFilename;
                 DialogResult result = saveCSVFileDialog.ShowDialog(this);
                 if (result == DialogResult.OK)
                 {
@@ -630,15 +634,14 @@ namespace HACC_MDS_Joiner
             rtbOutput.SelectionColor = (Color)color;
             rtbOutput.AppendText(text);
             rtbOutput.SelectionColor = rtbOutput.ForeColor;
-            rtbOutput.SelectionStart = rtbOutput.Text.Length;
-            // scroll it automatically
+            rtbOutput.SelectionStart = rtbOutput.Text.Length;            
             rtbOutput.ScrollToCaret();
         }
 
         private void appendOutputWarning(string text)
         {
             appendOutput("Warning: ", Color.FromArgb(245, 191, 66));
-            appendOutput(text+"\n");
+            appendOutput(text + "\n");
         }
 
         private void appendOutputError(string text)
